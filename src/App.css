@@ -1,0 +1,370 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: Dangrek-Regular;
+  src: url("./Fonts/Dangrek/Dangrek-Regular.ttf");
+}
+
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("./Fonts//Comfortaa/Comfortaa-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(95, 130, 255);
+}
+
+.text-color-red {
+  color: red;
+}
+
+.text-color-white {
+  color: white;
+}
+
+.display-flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-flex-column-c-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-flex-s-c {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.display-flex-s-s {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.display-flex-column-s-s {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.loading-wheel {
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-text {
+  font-family: Comfortaa-Regular;
+}
+
+.user-post-title, .navbar a {
+  font-family: Dangrek-Regular;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+
+  background-color: rgb(57, 95, 235);
+  height: 15vh;
+}
+
+.navbar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  margin-left: 1vw;
+}
+
+.navbar img {
+  width: 10vh;
+  border-radius: 50%;
+}
+
+.navbar a {
+  font-size: 4.5vh;
+  text-decoration: none;
+
+  line-height: 5vh;
+}
+
+.user-settings-nav img {
+  display: block;
+}
+
+.text-size-30px {
+  font-size: 30px;
+}
+
+.margin-right-20px {
+  margin-right: 20px;
+}
+
+.user-post, .user-post-info {
+  margin-bottom: 20px;
+}
+
+.loading-div {
+  height: 70vh;
+}
+
+.create-post-form * {
+  margin-bottom: 10px;
+}
+
+.create-post-form input, .create-post-form textarea {
+  border: 3px solid rgb(57, 95, 235);
+  border-radius: 5px;
+  outline: none;
+
+  font-family: Comfortaa-Regular;
+  font-size: 5vh;
+  color: white;
+
+  background-color: rgb(57, 95, 235);
+
+  padding: 10px 10px;
+
+  transition: 0.2s;
+}
+
+.create-post-form input:focus, .create-post-form textarea:focus {
+  border: 3px solid white;
+}
+
+.create-post-form input::placeholder, .create-post-form textarea::placeholder {
+  color: white;
+  font-size: 5vh;
+
+  text-wrap:nowrap;
+  overflow:hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.create-post-form input:not(.create-post-submit-button) {
+  height: 10vh;
+  width: 80vw;
+}
+
+.create-post-form textarea {
+  height: 55vh;
+  width: 80vw;
+
+  resize: none;
+}
+
+.create-post-form textarea::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.create-post-form textarea::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: rgb(24, 74, 255);
+  border-radius: 5px;
+}
+
+.create-post-submit-button {
+  width: 12vw;
+  min-width: 200px;
+}
+.create-post-submit-button[type=submit] {
+  font-size: 3.5vh;
+}
+
+.create-post-submit-button:hover {
+  background-color: rgb(24, 74, 255);
+  border: 3px solid white;
+}
+
+.input-length {
+  font-family: Comfortaa-Regular;
+  color: white;
+  font-size: 2.5vh;
+
+  text-align: left;
+}
+
+.submit-post-section {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+}
+
+.submit-form-loading-wheel {
+  margin-left: 2vh;
+  height: 5vh;
+}
+
+
+
+.user-post {
+  width: 90vw;
+
+  background-color: rgb(57, 95, 235);
+  border-radius: 10px;
+}
+
+.user-post * {
+  margin-left: 0.5vw;
+}
+
+.user-post-title h1 {
+  font-size: 8vmin;
+}
+
+.user-post-description p, .user-post-info p {
+  font-family: Comfortaa-Regular;
+}
+
+.user-post-description {
+  margin-bottom: 1.9vw;
+}
+
+.user-post-description p {
+  text-align: left;
+  line-height: 5vh;
+
+  font-size: 5vmin;
+}
+
+.user-post-info p {
+  font-size: 3vmin;
+}
+
+.user-post-info button {
+  border: none;
+  background: none;
+}
+
+.user-post-info button:hover {
+  cursor: pointer;
+}
+
+.user-post-info img {
+  padding-right: 0.5vw;
+  width: 2vw;
+  min-width: 15px;
+}
+
+.user-settings-banner {
+  height: 70vh;
+}
+
+.user-settings-banner img {
+  width: 15vh;
+  border-radius: 50%;
+}
+
+.user-settings-banner h1 {
+  font-family: Comfortaa-Regular;
+  color: white;
+  
+  margin-left: 3vh;
+}
+
+.user-settings-banner button {
+  font-family: Comfortaa-Regular;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: rgb(57, 95, 235);
+  color: white;
+
+  padding: 10px 10px;
+  margin-left: 3vh;
+}
+
+.login-page {
+  height: 70vh;
+}
+
+.login-page button {
+  background-color: rgb(57, 95, 235);
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 20px 20px;
+
+  cursor: pointer;
+}
+
+.login-page p {
+  font-size: calc(10px + 2.5vw);
+
+  color: white;
+  font-family: Comfortaa-Regular;
+}
+.login-page p::before {
+  content: "|";
+
+  color: grey;
+
+  padding-right: 1vw;
+}
+
+.login-page img {
+  width: 6vw;
+  min-width: 50.8px;
+
+  padding-right: 1vw;
+}
