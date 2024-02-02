@@ -266,8 +266,22 @@ body {
   margin-left: 0.5vw;
 }
 
+.user-post-title {
+  text-align: left;
+
+  margin-bottom: 2vmin;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+
+  width: 100%;
+}
+
 .user-post-title h1 {
   font-size: 8vmin;
+
+  overflow-wrap: break-word;
+
+  line-height: 13vmin;
 }
 
 .user-post-description p, .user-post-info p {
@@ -275,14 +289,25 @@ body {
 }
 
 .user-post-description {
+  width: 100%;
   margin-bottom: 1.9vw;
+
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 
 .user-post-description p {
   text-align: left;
-  line-height: 5vh;
+  line-height: 6vmin;
+  
+  overflow-wrap: break-word;
 
   font-size: 5vmin;
+}
+
+.user-post-info {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 
 .user-post-info p {

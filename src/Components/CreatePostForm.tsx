@@ -31,8 +31,8 @@ export const CreatePostForm = () => {
                   .required("Your post must have a title"), //Creating the shape with the error messages
         description: yup.string()
                         .trim()
-                        .max(150, "Description cannot exceed 150 characters")
                         .required("You must include a description")
+                        .max(150, "Description cannot exceed 150 characters")
     })
 
     //A lot of these functions are explained in one of the previous topics. It was in the form topic IIRC
